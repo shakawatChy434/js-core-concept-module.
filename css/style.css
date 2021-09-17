@@ -1,0 +1,23 @@
+body{
+    font-family: cursive;
+    /* background-color: rgb(231, 182, 123); */
+    cursor: pointer;
+    font-size: 20px;
+}
+h1{
+    text-align: center;
+    color: blue;
+};
+h3{
+    text-align:  center;
+}
+.m-details{
+    text-align: center;
+    justify-content: center;
+}
+.rollar{
+    /* height:  1px ; */
+    width:20%;
+    border: 4px solid #000;
+    border-radius: 50px;
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Css Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>JS Final Module.</title>
+</head>
+
+<body>
+    <h1>Javascript Concept for React . <br> Overall JS(Javascript) Revision Part. </h1>
+    <hr>
+    <h3>Be cearfully noted step by step:-</h3>
+    <form action="">
+        <ul>
+            <ol>
+                <h4>Module:42</h4>
+                <h4>Class No: 01 => " 6 Fundamental Concept Of JS " We must need to Konw.</h4>
+                1. Uses of Let & Const ; <br>
+                2. Uses of Condistion & Multi-Condistion;(> , < ,===, !==,>== , <== ) <br>
+                        3.Uses of Array []; (i). index of; (ii). lenght, (iii). push/pop <br>
+                        4. Uses of Object {}; <br> 3 Way of access property name; (i). student.age; <br>
+                        (ii).student['age'], (iii). Declar a variable then access it : student.[variable name']; <br>
+                        5. Uses of Function :(Simple Function & Multi-State Function); <br>
+                        6.Uses of Loop ; (i). While Loop & (ii). for loop; <br>
+            </ol>
+            <ol>
+                <h4>Class No: 02 => "Tamplate String, Arrow Function & Sprit Operator.[ES6]</h4>
+                1.Tamplate string (Dymanically ${student.name}, age is ${student.age}..etc.) <br>
+                2. Arrow Function : Single & MultiLine; <br>
+                (i). const getFifty = () => 50 (without parameter); <br> (ii). cosnt addSixtyfive = num => num+65 (add
+                Single parameter), <br> (iii). const addThree = (x,y,z) => x+y+z (add tirple parameter/ multi
+                parameter); <br> (iv).
+                const isEven = (x) => x % 2 == 0 ; (Check is that isEven number) <br>
+                (v). const doMath = (a, b) => { <br>
+                cosnt sum = a+b <br>
+                return sum ; <br>
+                }; <br>
+                3. Spread Operator(Copy Operator) : (...); [Make a new array form existing(old) array & add another new
+                element] ;
+                <br>
+                =>. const number = [12, 32, 43, 56, 46,50]; <br>
+                cosnt newNumbers = (...number, 180, 230, 450 etc....); <br>
+            </ol>
+            <ol>
+                <h4>Class No: 03 => "Array Methods "Map, Filter, Find & Foreach".[ES6]</h4>
+                <h4>(i). According to Map:</h4>
+                const products = [<br>
+                { name: "Laptop" , price: 43000 , brand: "HP" , color: "silver"}, <br>
+                { name: "camera" , price: 33000 , brand: "canon" , color: "black"}, <br>
+                { name: "Watch" , price: 3000 , brand: "casio" , color: "white"}, <br>
+                ]<br>
+                const products = products.map(product => product.name); <br>
+                const products = products.map(product => product.price); <br>
+                const products = products.map(product => product.brand) <br>
+                <== তাহলে সে সবগুলো নাম, দাম ও ব্র্যান্ডকে একটা নতুন array করে শো করবে । <br>
+                    1.Map=Map এর কাজ হলো <br> অনেকগুলো Array Of Object(অর্থ্যাত একটা array এর ভেতরে
+                    অনেকগুলো Objects) থেকে
+                    <br> যাকে
+                    access করতে চাই তাকে একটা নতুন array হিসেবে return করে । <br>
+                    <br>
+
+                    <h4>(ii). According to forEach:</h4>
+                    products.forEach(product => console.log(product.name));<== Or <br>
+                        products.forEach(product => console.log(product.price)); <== Or <br>
+                            products.forEach(product => console.log(product.brand));<br>
+
+                            <h4>(iii). Function MultiLine forEach:</h4>
+                            products.forEach(product =>{ <br>}); <br>
+                            2.forEach = forEach এর কাজ হলো <br> যাকে access করতে চাই তাকে সরাসরি objects আকারে দিয়ে
+                            দেওয়া ।
+                            <br>
+                            forEach
+                            return করে নাহ । <br> তাই forEach এর ভেতর থেকে কোন কিছু access করে দেখতে চাইলে তখন তাকে
+                            console.log
+                            করে
+                            দেখতে
+                            হয় ।<br>
+                            <h4> (iv). According to Filter(ফিল্টার):</h4>
+                            const cheap = products.filter(product => product.price < 5000); <br>
+                                console.log(cheap); <br>
+                                যাদের প্রাইজ ৫ হাজার টাকার কম তাদের সবগুলো দেখাবে । <br>
+                                const spacficeName = products.filter(product => product.name.includes('n')); <br>
+                                console.log(spacficeName); <br>
+                                যাদের নামের মধ্যে "n" আছে তাদের সবাইকে দেখাবে ।
+
+                                <h4> (v). According to Find (ফাইন্ড):</h4>
+                                const cheap = products.find(product => product.price < 5000); <br>
+                                    console.log(cheap); <br>
+                                    যাদের প্রাইজ ৫ হাজার টাকার কম তাদের মধ্যে শুধুমাত্র ১ম টা দেখাবে । <br>
+                                    const spacficeName = products.find(product => product.name.includes('n')); <br>
+                                    console.log(spacficeName); <br>
+                                    যাদের নামের মধ্যে "n" আছে তাদের শুধুমাত্র ১ম টা দেখাবে <br>
+
+                                    <h4> (*****) [নোটঃ (Filter)ফিল্টার & (Find)ফইন্ড : Filter শর্তের সাথে যারা যারা
+                                        ম্যাচ করবে
+                                        তাদের
+                                        সবাইকে দেখাবে এবং Find শর্তের সাথে যারা যারা ম্যাচ করবে তাদের শুধুমাত্র প্রথমটাই
+                                        দেখাবে এবং এরা Filter return হিসেবে array provide করে ও Find "return হিসেবে
+                                        Objects provide করে ।]:</h4>
+
+
+
+
+            </ol>
+            <ol>
+                <h4>Class No: 04 => "Array & Objects Distructuring & Opstional Chaining".[ES6]</h4>
+                01. Distructuring এর মুল কাজ হলো variable হিসেবে অন্য যে-কোনো variable এর property এর মানকে নিজের মধ্যে
+                assign করে নেওয়া।
+                Distructuring এর মাধ্যমে যা যা পাওয়া যায় তা নিম্নরুপঃ <br>
+                1. Distructuring করার সময় মনে রাখতে হবে যে, <br> আমারা যেই variable থেকে মান assign করতে চাচ্ছি সেই
+                variable <br>
+                এর মান বা value যদি array আকারে থাকে তাহলে বামপাশে মান assign করার সময় অবশ্যই array হিসেবে assign
+                করতে হবে । <br> আর যদি তা Object হিসেবে থাকে তাহলে ডানপাশে মান assign করার সময় অবশ্যই Object হিসেবে
+                assign
+                করতে হবে । <br>
+                সাধারণত Distructuring করার সময় আমরা চাইলে array , objects & variable কে মান হিসেবে assign করতে পারি ।
+                <br>
+            </ol>
+
+            <ol>
+                <h4>Class No: 05 => "Json, Fetch, Keys, values , Arra Add Or Remove Using Dots".[ES6]</h4>
+                <h4>1. (Json ):- </h4>
+                (i). JSON.stringify;<br>
+                (ii). JSON.parse;<br>
+                const student = { <br>
+                name: 'Shakawat Chowdhury',<br>
+                age: 21,<br>
+                movies: ['King Khan', 'Dhakar King', 'Rickshaw-Owalar Prem']<br>
+                }<br>
+                const studentJSON = JSON.stringify(student);<br>
+                console.log(studentJSON);<br>
+                const studentParse = JSON.parse(studentJSON);<br>
+                console.log(studentParse);<br>
+                <h4> 2.(Fetch ):- </h4>
+                fetch('url') <br>
+                .then(response => response.json())<br>
+                .then(data => console.log(data));<br>
+                <h4>3.Keys & values</h4>
+                const keys = Object.keys(student);<br>
+                const Valus = Object.values(student);<br>
+                <h4>forEach & object.map</h4>
+                <h4>Object.map:- </h4>
+                const withReturn = numbers.map(num => num * 2); <br>
+
+                স্বাভাবিকভাবে কোন একটা Function থেকে যদি রির্টান নিতে চাই তাহলে আমরা
+                (object.map) ব্যাবহার করব। যেমনঃ যোগ, বিয়োগ, গুণ , ভাগ ইত্যাদি <br>
+                আর
+                <h4>forEach :- </h4>
+                const withOutReturn = numbers.forEach(num => console.log(num)); <br>
+                যদি রির্টান নেওয়ার প্রয়োজন না হয় তাহলে আমরা (forEach) Function ব্যাবহার করব ।<br>
+                তবে সামনের প্রায় সব কাজেই আমরা (forEach) Function ব্যাবহার করব (VVI) ।<br>
+                <h4>Add Array & Remove Array:</h4>
+                const products = [<br>
+                { name: "Laptop", price: 43000, brand: "HP", color: "silver" },<br>
+                { name: "camera", price: 33000, brand: "canon", color: "black" },<br>
+                { name: "Watch", price: 3000, brand: "casio", color: "white" },<br>
+                ]<br>
+                const newProducts = { name: "Water Botol", price: 300, brand: "RFL", color: "gray" },
+                /* Add new array */<br>
+                const product = [...products, newProducts]<br>
+                console.log(product); <br>
+                /* Create a new array without one specific item Or <br>
+                Remove phone means create a new array withOut the phone; */<br>
+                const remaing = products.filter(p => p.name !== 'phone');<br>
+                console.log(remaing);<br>
+            </ol>
+            <ol>
+                <h4>Class No: 06 => "Truthy & False Value; Ternury Operator ; Convert Number & String;Toggole ".[ES6]
+                </h4>
+                (i).Truthy value: "write something"; 5(num), {objects}, [array], true etc. <br>
+                (ii).Falsey Value : "Empty String", 0 (num),null, undefine, false ect. <br>
+                (iii).Ternury Operator : Ternury Operator এর কাজ হলো Opstional Chaning এর মতোই ;যেমনঃ <br>
+                let money = 80; <br>
+                let food; <br>
+                if (money > 100) { <br>
+                food = 'পুরান ঢাকার কাচ্ছি খামু' <br>
+                } else { <br>
+                food = 'তোর কপালে কাচ্ছি নাঈ , পানি খাঁ' <br>
+                } <br>
+                /* Apply in Ternury Operator */ <br>
+                let food = money > 100 ? 'পুরান ঢাকায় যামু কাচ্ছি বিরিয়ানী খামু' : "এইবারেও তোর কপালে বিরিয়ানী নাই,মুড়ি
+                খাঁ"; <br>
+                /* আবার চাইলে ২টা Condistion একসাথেও এড করেও হলে করা যায় */ <br>
+                /* (i). ২টা শর্ত পুরণ করতেই হবে */let food = money > 100 && myPocket > 100 ? 'এবার আর কে টেকায়' : "ভাল I
+                করে পকেট চেক কর গাঁদা, যা দুরে গিয়া মর"; <br>
+                /* (ii). যে-কোন একটা শর্তঈ পুরণ করলেই হবে */ const food = money > 100 || myPocket > 100 ? 'এবার দিলে
+                দিবে না দিলে বিরিয়ানী ডেক্সীসহ গায়েবুল হাওয়া করে দিমু' : "সত্যিই এবার বিরিয়ানী দিবে- আর চিন্তা নাই";
+                <br>
+
+                (iv). Convert Number to String & String to Number; <br>
+                নাম্বারের সাথে empty string যোগ করলেই নাম্বার string এ রুপান্তর হয়ে যায় । <br>
+                const myNo = 50; <br>
+                const convertSting = myNo + ""; <br>
+                assign করা variable এর সাথে যদি শুরুতেই প্লাস সাইন (+) add kora hoi tyle number e convert hoye jai .
+                <br>
+                const myString = "439" <br>
+                const convertNo = +myString; <br>
+                (iv) . Toggole : Toggole "er kaj holo Positive kono Value ke Negative &&& Negative kono Value ke
+                Positive kora " <br>
+                Example: isActive = !isActive; <br>
+                !isActive = isActive' <br>
+            </ol>
+
+            <ol>
+                <h4>Class : 07 "Local Storage & Session Storage":- </h4>
+                (i). Local Storage & Session Storage "er modde 2tar kaj kintho eki, <br> Sodomathro tofath 1tai , ta
+                holo :"Session Storage" er data ta fixed vabe deposite thake nah , Refresh Or browser change korlei
+                Remove hoye jai . <br> R Onno dike "Local Storage" er data ta alwayes fixed thake . Browser theke exite
+                korleO data storage e deposite theke jai. "
+                <h4> >"Uses of Keys & values: - " </h4>
+                Storage e single value kub sohojei raka jai , kintho Kono "objects Or Array" ke jodi amra Storage e
+                store kore rakthe cai , tahole Oi "objects ba array " ke age "json.stringify" - kore nethe hobe, tahole
+                storage kora jabe, &&&&& " Storage"- kora " Keys & Value " jodi amra abr use korar jonno access korthe
+                cai , thokon oi value golo ke abr "json.Parse"- kore objects e convert kore tarpor use kora jave. <br>
+                'R etai holo "Local & Session Storage"- shomporkhe Mol dharonah'.
+            </ol>
+        </ul>
+        <ul>
+            <ol class="m-details">
+
+                <h3>Class : 8 "Module Summery & Revision Task":- </h3>
+                <div class="m-summary">
+                    Fundamental Core Concept:- <br>
+                    No:01 <br>
+                    <hr class="rollar">
+                    (i). 1.1 variable (let, const ) =>"Three Types of variable (String, Number & Boolean)" <br> 1.2
+                    Condistion (>,<,===, <=,>=,) && || , if, if-else, else, <br>
+                        1.3 Array :(Declare , lenght , index , push, pop, indexOf, includes); <br>
+                        1.4 for Loop , while Loop (opstional); <br>
+                        1.5 function (declare, return, set perametar); <br>
+                        1.6 Object Property=>(writing), including array , Objects <br> <br><br>
+
+                        No:02 <br>
+                        <hr class="rollar">
+                        ES6 =Related. <br>
+                        2.1 Tamplate String dynamically $(); <br>
+                        2.2 Spread Operator (...) (copy an array than add to a new array) <br>
+                        2.3 Use filter to remove an element from an Array ; <br> <br> <br>
+                        NO:03 <br>
+                        <hr class="rollar">
+                        3.1 Arrow function <br>
+                        3.2 No parameter () ; <br>
+                        3.3 Single parameter num => ; <br>
+                        3.4 Multipule parameter (name1, name2); <br>
+                        3.5 MultiLine Arrow Function; <br> <br> <br>
+                        No:04 <br>
+                        <hr class="rollar">
+                        4.1 Distructuring ; <br>
+                        4.2 Object Distructuring ; <br>
+                        4.3 Array Distructuring ; <br>
+                        4.4 Variable Distructuring; <br> <br> <br>
+                        No: 05 <br>
+                        <hr class="rollar">
+                        5. Objects Declaration shorthand Like that :- (Ternury Operator); <br>
+                        6. Function parameter default value (num=2)=>default value set korae rakha;<br>
+                        7.Browser API <br>
+                        7.1 Local Storage ; <br>
+                        7.2 Session Storage ; <br>
+                        7.3 Location Api; <br>
+                        7.4 History API ; <br>
+                        7.5 fetch alternative way to (assinc a wait); <br>
+                        No: 08 <br>
+                        <hr class="rollar">
+                        Others:- <br>
+                        0.1 array ,map, forEach , find , filter => কীভাবে ইউজ করতে হয় তা জানতে হবে, <br>
+                        0.2 Ternary Operator ; <br>
+                        0.3 Logical (&&) and Logical Or(||); <br>
+                        0.4 Opstional Chaining (?.) "অর্থ্যাত ডট(.) এর আগে Question Mark বসিয়ে দেওয়া । <br>
+                        0.5 JSON (stringify &&&& parse) <br>
+                </div>
+            </ol>
+        </ul>
+    </form>
+    <!-- Javascript language -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
